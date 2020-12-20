@@ -1,31 +1,6 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+body{
+  background-color: honeydew;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +10,242 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* styles */
+
+.bold{
+  font-weight: bold;
+}
+
+.MainContainer{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: white;
+}
+
+.Energy, .CalculateResult {
+  display: flex;
+  background: lightblue;
+  width: 400px;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 20px;
+  border: black 1px solid;
+}
+
+.card {
+    margin: 20px 50px;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 500px;
+    /* height: 400px; */
+    max-height: 1000px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background: #86c2e6dc;
+    box-shadow: 10px 15px #008080;
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+.CarCard:active{
+  transform: translateY(4px) translateX(3px);
+  box-shadow: 5px 6px #008080;
+}
+
+.CarCard{
+  margin: 20px 50px;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 500px;
+  /* height: 400px; */
+  max-height: 500px;
+  border: 1px black solid;
+  border-radius: 10px;
+  background: #86c2e6dc;
+  box-shadow: 10px 15px #008080;
+  font-family: 'Electrolize', sans-serif;
+  font-family: 'Overpass Mono', monospace;
+}
+
+
+
+
+.CarSelection{
+  /* background: white */
+}
+
+.CardContainer h1{
+  text-align: center;
+}
+
+
+.CarSelection .CardContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.card img{
+  height: 200px;
+}
+
+.CarCard img{
+  height: 200px;
+
+}
+
+
+
+.card button{
+  font-family: 'Electrolize', sans-serif;
+  font-family: 'Overpass Mono', monospace; 
+  font-size: 18px;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: 100px;
+  background:#d4c5f8e5 ;
+  margin: 0px 10px;
+}
+
+
+.userInput{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.center{
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row{
+  display: flex;
+  flex-flow: row;
+}
+.flex-column{
+  display: flex;
+  flex-flow: column;
+}
+
+.card button:hover{
+  color: white;
+  background-color: #b496fbe5 ;
+  cursor: pointer;
+
+}
+
+#fuelCost{
+  width: 300px;
+}
+
+.transportation{
+  margin: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  background: orange;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.transport-section{
+  display: flex;
+  flex-flow: column;
+  margin: 10px 0px;
+  
+}
+
+.CalculateResult{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.CalculateResult form input {
+  margin: 10px
+  
+
+}
+
+.intro {
+  flex-flow: column wrap;
+  background: lightblue;
+  padding: 50px;
+}
+
+.intro img{
+  float: right;
+  margin: 50px;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.intro img:hover{
+  height: 450px;
+  width: 450px
+}
+.EmissionBreakdown{
+  display: flex;
+  flex-flow: column ;
+  background: lightblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.EmissionBreakdown li{
+  list-style: none;
+  font-size: 18px;
+}
+
+.EPA_Images{
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  width: 100vw;
+  padding: 0 auto;
+  margin: 0 auto;
+  border: black solid 1px;
+}
+
+
+nav{
+  background-color: orange;
+ float: right;
+ margin-top: 10px;
+ margin-right: 300px;
+}
+
+nav h1{
+  float: left;
+
+  margin: 300px;
+}
+
+nav ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: black solid 1px;
+}
+
+footer {
+  display: flex;
+  background: black;
+  color:white;
+  height: 400px;
+  width: 100vw;
+}
+
+footer h2 {
+  font-size: 20px;
+  
 }
